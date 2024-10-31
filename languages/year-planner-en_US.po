@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Really Simple Year Planner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-14 14:33+0000\n"
+"PO-Revision-Date: 2021-02-14 17:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6.1\n"
+"X-Domain: year-planner"
+
+#: yearplanner.php:65
+msgid "All Entries"
+msgstr ""
+
+#: yplform.php:36
+msgid "Cancel"
+msgstr ""
+
+#: yearplanner.php:311
+msgid "Colour"
+msgstr "Color"
+
+#: yplform.php:26
+msgid "Colour:"
+msgstr "Color:"
+
+#: yearplanner.php:312
+msgid "Date"
+msgstr ""
+
+#. Author of the plugin
+msgid "David Thompson"
+msgstr ""
+
+#: yearplanner.php:193
+#| msgid "Default bar colour:"
+msgid "Default bar colour"
+msgstr "Default bar color"
+
+#: yearplanner.php:309
+msgid "End Date"
+msgstr ""
+
+#: yplform.php:22
+msgid "End Date:"
+msgstr ""
+
+#: yplform.php:14
+msgid "Entry Label:"
+msgstr ""
+
+#: yearplanner.php:307
+msgid "Entry Name"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://davidthompson.blog"
+msgstr ""
+
+#: yearplanner.php:62
+msgid "Planner Entries"
+msgstr ""
+
+#: yearplanner.php:63
+msgid "Planner Entry"
+msgstr ""
+
+#: yplform.php:9
+msgid ""
+"Please submit the following details to add a new entry to your year planner."
+msgstr ""
+
+#. Name of the plugin
+msgid "Really Simple Year Planner"
+msgstr ""
+
+#: yearplanner.php:310
+msgid "Recurring"
+msgstr ""
+
+#: yplform.php:30
+msgid "Recurring:"
+msgstr ""
+
+#: yearplanner.php:308
+msgid "Start Date"
+msgstr ""
+
+#: yplform.php:18
+msgid "Start Date:"
+msgstr ""
+
+#: yplform.php:35
+msgid "Submit"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This plugin provides a single view year planner. It is not trying to be a "
+"complete diary solution or events planner, but is simply there to give you "
+"all the weeks of the year arranged in a single view. The ability to add "
+"coloured bars representing events in your year planner is a bonus!"
+msgstr ""
+"This plugin provides a single view year planner. It is not trying to be a "
+"complete diary solution or events planner, but is simply there to give you "
+"all the weeks of the year arranged in a single view. The ability to add "
+"colored bars representing events in your year planner is a bonus!"
+
+#: yearplanner.php:64
+msgid "Year Planner"
+msgstr ""
+
+#: yearplanner.php:156
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""

@@ -1,0 +1,65 @@
+/*****************************************************
+** Name:        ypl-admin.css
+** Author:      David Thompson
+** Version:     1.0
+** Plugin:      Year Planner
+** Description: CSS style sheet for backend HTML
+*****************************************************/
+
+.yplmetafield {
+    margin: 20px;
+}
+
+.yplmetafield label {
+    display: inline-block;
+    width: 100px;
+}
+
+.yplmetafield.date input {
+    width: 200px;
+}
+
+.yplformrow {
+    display: table-cell;
+}
+
+.yplformrow label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    margin-left: 40px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.yplformrow input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ypladminform p {
+    margin-left: 40px;
+    display: inline-block;
+    width: 200px;
+}
+
+#canviewrowid {
+}
+
+#defcolor:hover {
+    cursor: pointer;
+}
+
+#settingssavebtn {
+    width:100px; 
+    height:30px; 
+    background-color:#0073aa; 
+    color:white; 
+    border:none; 
+    border-radius:5px;
+}
+
+#settingssavebtn:hover {
+    background-color:#0083ba;
+    cursor: pointer;
+}

@@ -1,0 +1,303 @@
+/*****************************************************
+** Name:        yearplanner.css
+** Author:      David Thompson
+** Version:     1.0
+** Plugin:      Year Planner
+** Description: CSS style sheet for Year Planner plugin
+*****************************************************/
+
+.yplcontainer {
+    width: calc(100vw - 40px);
+    margin-left: calc((100vw - 100%) * -0.5 + 20px); 
+}
+
+.yplmonth {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yplday {
+    position: relative;
+    width: calc(100% / 38);
+    border: solid 1px grey;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-left: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .yplday {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .yplday {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .yplday {
+        font-size: 0.4em;
+    }
+}
+
+.yplday.spacer {
+    background-color: lightgray;
+}
+
+.yplday.weekday {
+    background-color: white;    
+}
+
+.yplday.weekend {
+    background-color: antiquewhite;
+}
+
+.yplmonthlabel {
+    position: relative;
+    width: calc(100% / 76);
+    background-color: black;
+    color: white;
+    border-bottom: white 1px solid;
+}
+
+.yplmonthlabelinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 1200px) {
+    .yplmonthlabelinner {
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .yplmonthlabelinner {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .yplmonthlabelinner {
+        font-size: 0.4em;
+    }
+}
+
+
+.yplmonthlabelinner.rotatel {
+    padding-left: 10px;
+    transform:  translateX(-50%) translateY(50%) rotate(-90deg);
+}
+.yplmonthlabelinner.rotater {
+    padding-right: 10px;
+    transform:  translateX(-50%) translateY(50%) rotate(90deg);
+}
+
+.yplbar {
+    position: absolute;
+    background-color: red;
+    border: black 1px solid;
+    z-index: 2;
+}
+
+.yplday.today {
+    border: red 3px solid;
+}
+@media only screen and (max-width: 800px) {
+    .yplday.today {
+        border: red 1px solid;
+    }
+}
+
+.yplbar.titled {
+    padding-left: 4px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.yplformcontainer {
+    display: none;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    width: 350px;
+    border: 2px solid #1B1CAB;
+    border-radius: 8px;
+    background-color: #D6D6D6;
+    margin: auto;
+    padding-top: 20px;
+    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+    .yplformcontainer {
+        width: 95%;
+    }
+}
+
+.yplformtext {
+    text-align: center;
+    margin: 10px 20px 40px 20px;
+    font-size: 16px;
+}
+
+.yplentryfields {
+    width: 75%;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+
+.yplentryfields label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.yplentryfields input {
+    display: inline-block !important;
+    margin-bottom: 0px !important;
+}
+
+.yplentryfields :last-child {
+    margin-bottom: 30px;
+}
+
+.yplformitem {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+#yplformid {
+    margin: 1.15em 0;
+}
+
+#yplformstartid {
+    width: calc(100% - 120px);
+    margin-left: 10px;  
+}
+
+#yplformendid {
+    width: calc(100% - 120px);
+    margin-left: 10px; 
+}
+
+#yplformcolorid {
+    width: calc(100% - 120px);
+    margin-left: 10px; 
+}
+
+#yplformrecurringid {
+    width: 10px;
+    margin-left: 10px;  
+    transform: scale(1.2);
+}
+
+#yplformtitleid {
+    width: calc(100% - 120px);
+    margin-left: 10px;     
+}
+
+.yplformbuttons {
+    display: block;
+    margin: auto;
+    width: 220px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.yplbutton {
+    border: darkgrey 1px solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    
+}
+.yplbutton.yplsubmit {
+    background-color: #1E9C19;
+}
+.yplbutton.yplcancel {
+    background-color: #7F7F7F;
+}
+
+.yplbutton.yplsubmit:hover {
+    background-color: #0E8C09;    
+}
+.yplbutton.yplcancel:hover {
+    background-color: #6F6F6F;
+}
+
+#yplbuttonsubmitid {
+    float: left;
+    height: 32px;
+    width: 100px;
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#yplbuttoncancelid {
+    float: right;
+    height: 32px;
+    width: 100px;
+    font-size: 14px;
+    margin-left: 10px;    
+    text-align: center;
+}
+
+.yplcontrols button {
+    margin-bottom: 20px;
+}
+
+.yplcontrol {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: #EAFFF7;
+    color: #1B1CAB;
+    border: #1B1CAB 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0px;
+    border-radius: 2px;
+}
+
+.yplcontrol:hover {
+    background-color: #CADFD7;
+}
+
+.yplcontrol.next {
+    margin-right: 20px;
+}
+
+.yplyearlabel {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: #D6D6D6;
+    color: #1B1CAB;
+    border: #1B1CAB 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 5px 20px;
+    border-radius: 2px;    
+}
